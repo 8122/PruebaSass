@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ejercicio09</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.js"></script>
+        <![endif]-->
+        <style>
+            .container{
+                box-sizing:border-box;
+                width: 700px;
+                font-family: FontAwesome;
+                padding: 10px;
+                background: #585858;
+                color: white;
+                border: 2px solid #848484;
+                position: relative;
+                border-collapse: collapse;
+            }
+            .container__item{
+
+            }
+            .container__item--close{
+                display: none;
+            }
+            .container__subitem--open:hover > ul{
+                display: block;
+            }
+            .container__subitem{
+                
+            }
+            .container__things{
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul class="container">
+                <li class="container__item"> Item 1
+                    <a class="container__item container__item--close" href="#">
+                        <ul class="container__subitem ">
+                            <li class="container__subitem container__subitem--open"> Sub-item 1</li>
+                            <li class="container__subitem container__subitem--open"> Sub-item 2</li>
+                            <li class="container__things container__subitem--open">Thing 1</li>
+                            <li class="container__things container__subitem--open">Thing 2</li>     
+                        </ul>
+                    </a>
+                </li>
+               <li class="container__item"> Item 2
+                   <a class="container__item container__item--close" href="#">
+                        <ul class="container__subitem">
+                            <li class="container__subitem"> Sub-item 1</li>
+                            <li class="container__subitem"> Sub-item 2</li>
+                            <li class="container__things">Thing 1</li>
+                            <li class="container__things">Thing 2</li>     
+                        </ul>
+                   </a>
+                </li>
+                <li class="container__item"> Item 3
+                    <a class="container__item container__item--close" href="#">
+                        <ul class="container__subitem">
+                            <li class="container__subitem"> Sub-item 1</li>
+                            <li class="container__subitem"> Sub-item 2</li>
+                            <li class="container__things">Thing 1</li>
+                            <li class="container__things">Thing 2</li>     
+                        </ul>
+                    </a>
+                </li>
+                <li class="container__item"> Item 4
+                    <a class="container__item container__item--close" href="#">
+                    <ul class="container__subitem">
+                            <li class="container__subitem"> Sub-item 1</li>
+                            <li class="container__subitem"> Sub-item 2</li>
+                            <li class="container__things">Thing 1</li>
+                            <li class="container__things">Thing 2</li>     
+                    </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
